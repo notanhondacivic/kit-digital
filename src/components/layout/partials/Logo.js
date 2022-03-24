@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import Image from '../../elements/Image';
 
 const Logo = ({
@@ -19,13 +19,13 @@ const Logo = ({
       className={classes}
     >
       <h1 className="m-0">
-        <Link to="/">
+        <a href="https://www.fiebrecreativa.com/">
           <Image
             src={require('./../../../assets/images/logo.svg')}
-            alt="Open"
-            width={32}
-            height={32} />
-        </Link>
+            alt="logo fiebre tm"
+            width={52}
+            height={52} />
+        </a>
       </h1>
     </div>
   );

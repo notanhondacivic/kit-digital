@@ -50,30 +50,34 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: 'Workflow that just works',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: '¿Cómo conseguir el bono digital?',
+    paragraph: 'Si cumples con las condiciones establecidas en las bases de la convocatoria de la ayuda del Kit Digital, podrás disponer de un bono digital que te permitirá acceder a las soluciones de digitalización.',
   };
+ 
 
   return (
-    <section
+    <section id='kit'
       {...props}
       className={outerClasses}
     >
       <div className="container">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
+
           <div className={splitClasses}>
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                <div className=" text-color-primary fw-600 tt-u mb-8 pasos" >
+                Primer paso
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                  Registro
+
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Regístrate en <a href='https://www.acelerapyme.gob.es/user'>el área privada</a>  y completa el <a href='https://www.acelerapyme.gob.es/quieres-conocer-el-grado-de-digitalizacion-de-tu-pyme'>test de diagnóstico digital</a> .
+
                   </p>
               </div>
               <div className={
@@ -83,7 +87,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-01.png')}
+                  src={require('./../../assets/images/paso1.png')}
                   alt="Features split 01"
                   width={528}
                   height={396} />
@@ -92,14 +96,15 @@ const FeaturesSplit = ({
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                <div className="text-color-primary fw-600 tt-u mb-8 pasos">
+                Segundo paso
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                Consulta
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Consulta la información disponible de las <a href='https://www.acelerapyme.gob.es/kit-digital/soluciones-digitales'>soluciones de digitalización</a>  que pondrá a tu disposición el programa Kit Digital.
+
                   </p>
               </div>
               <div className={
@@ -109,7 +114,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-02.png')}
+                  src={require('./../../assets/images/paso2.png')}
                   alt="Features split 02"
                   width={528}
                   height={396} />
@@ -118,14 +123,14 @@ const FeaturesSplit = ({
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                <div className=" text-color-primary fw-600 tt-u mb-8 pasos">
+                Tercer paso
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                  Solicitud
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Accede a los trámites para <a href='https://sede.red.gob.es/es/procedimientos/convocatoria-de-ayudas-destinadas-la-digitalizacion-de-empresas-del-segmento-i-entre'>solicitar tu bono Kit Digital </a> (Las solicitudes se podrán presentar a partir del 15 de Marzo).
                   </p>
               </div>
               <div className={
@@ -135,7 +140,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-03.png')}
+                  src={require('./../../assets/images/paso3.png')}
                   alt="Features split 03"
                   width={528}
                   height={396} />

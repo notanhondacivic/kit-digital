@@ -5,6 +5,7 @@ import { createBrowserHistory } from "history";
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter } from 'react-router-dom';
 
 //import './App.css';
 import './assets/scss/style.scss';
@@ -12,9 +13,11 @@ import './assets/scss/style.scss';
 const history = createBrowserHistory();
 
 ReactDOM.render(
+  <BrowserRouter>
   <Router history={history}>
     <App />
-  </Router>,
+  </Router>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

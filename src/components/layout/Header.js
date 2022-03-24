@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -75,11 +76,11 @@ const Header = ({
   );
 
   return (
-    <header
+    <header 
       {...props}
       className={classes}
     >
-      <div className="container">
+      <div className="container" >
         <div className={
           classNames(
             'site-header-inner',
@@ -112,17 +113,51 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Documentation</Link>
+                      
+                      <Link to='/#inicio' onClick={closeMenu}>Inicio</Link>
                     </li>
                   </ul>
-                  {!hideSignin &&
-                    <ul
-                      className="list-reset header-nav-right"
-                    >
-                      <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
-                      </li>
-                    </ul>}
+                  <ul className={
+                    classNames(
+                      'list-reset text-xs',
+                      navPosition && `header-nav-${navPosition}`
+                    )}>
+                    <li>
+                      
+                      <Link to='/#servicios' onClick={closeMenu}>Servicios</Link>
+                    </li>
+                  </ul>
+                  <ul className={
+                    classNames(
+                      'list-reset text-xs',
+                      navPosition && `header-nav-${navPosition}`
+                    )}>
+                    <li>
+                      <Link to='/#kit' onClick={closeMenu}>Kit Digital</Link>
+                      
+                    </li>
+                  </ul>
+                  <ul className={
+                    classNames(
+                      'list-reset text-xs',
+                      navPosition && `header-nav-${navPosition}`
+                    )}>
+                    <li>
+                    <Link to='/#fiebre' onClick={closeMenu}>Fiebre</Link>
+                      
+                    </li>
+                  </ul>
+                  <ul className={
+                    classNames(
+                      'list-reset text-xs',
+                      navPosition && `header-nav-${navPosition}`
+                    )}>
+                    <li>
+                    <Link to='/#contacto' onClick={closeMenu}>Contacto</Link>
+                      
+                    </li>
+                  </ul>
+                  
                 </div>
               </nav>
             </>}

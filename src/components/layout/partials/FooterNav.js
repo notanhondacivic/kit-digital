@@ -19,17 +19,15 @@ const FooterNav = ({
     >
       <ul className="list-reset">
         <li>
-          <Link to="#0">Contact</Link>
+          <Link to="https://www.somosfiebre.com/aviso-legal/">Aviso Legal</Link>
         </li>
         <li>
-          <Link to="#0">About us</Link>
+          <Link to="https://www.somosfiebre.com/politica-de-privacidad/">Política de Privacidad</Link>
         </li>
         <li>
-          <Link to="#0">FAQ's</Link>
+          <Link to="https://www.somosfiebre.com/politica-de-cookies/">Política de Cookies</Link>
         </li>
-        <li>
-          <Link to="#0">Support</Link>
-        </li>
+       
       </ul>
     </nav>
   );

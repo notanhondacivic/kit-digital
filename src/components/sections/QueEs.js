@@ -14,7 +14,7 @@ const defaultProps = {
   ...SectionProps.defaults
 }
 
-const Hero = ({
+const QueEs = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -70,10 +70,10 @@ const Hero = ({
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button tag="a" color="dark" wideMobile href="#contacto" >
+                  <Button tag="a"  wideMobile href="#contacto" style={{'color':'Black','backgroundColor':'#ffed00'}}>
                     Contacto
                     </Button>
-                  <Button tag="a"  wideMobile href="#kit" style={{'color':'Black','backgroundColor':'#ffed00'}}>
+                  <Button tag="a" color="dark" wideMobile href="#kit">
                     Guia Kit Digital
                     </Button>
                 </ButtonGroup>
@@ -90,7 +90,7 @@ const Hero = ({
             >
               <Image id="video"
                 className="has-shadow"
-                src={require('./../../assets/images/video.png')}
+                src={require('./../../assets/images/video-placeholder.jpg')}
                 alt="Hero"
                 width={1024}
                 height={504}
@@ -111,7 +111,7 @@ const Hero = ({
         <div className={innerClasses}  >
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
           <Image id="logo-digitalizadores"
-                className="grow"
+                className="has-shadow"
                 src={require('./../../assets/images/Logo-digitalizadores.png')}
                 alt="Hero"
                 width={1024}

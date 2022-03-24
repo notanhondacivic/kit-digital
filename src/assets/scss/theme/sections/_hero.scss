@@ -1,0 +1,22 @@
+$grande: 1024px;
+$mediano:978px;
+@media  (min-width: $grande){
+  
+
+.container-sm{
+    max-width: 80%;
+    
+}
+#logo-digitalizadores{
+    padding: 40px;
+}
+}
+@media  (max-width: $grande){
+    #logo-digitalizadores{
+        padding: 20px;
+    }
+    .container-sm{
+        max-width: 90%;
+        
+    }
+}
