@@ -19,6 +19,8 @@ import CRM from './views/CRM';
 import ERP from './views/ERP';
 import RedesSociales from './views/RedesSociales';
 import PresenciaOnline from './views/PresenciaOnline';
+import PresenciaAvanzadaEnInternet from './views/PresenciaAvanzadaEnInternet';
+import Marketplace from './views/Marketplace';
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
 
@@ -53,6 +55,8 @@ const App = () => {
           <AppRoute exact path="/ERP" component={ERP} layout={LayoutDefault} />
           <AppRoute exact path="/RedesSociales" component={RedesSociales} layout={LayoutDefault} />
           <AppRoute exact path="/PresenciaOnline" component={PresenciaOnline} layout={LayoutDefault} />
+          <AppRoute exact path="/PresenciaAvanzadaEnInternet" component={PresenciaAvanzadaEnInternet} layout={LayoutDefault} />
+          <AppRoute exact path="/Marketplace" component={Marketplace} layout={LayoutDefault} />
         </Switch>
         </ScrollToTop>
       )} />

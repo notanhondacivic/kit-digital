@@ -295,6 +295,52 @@ const FeaturesTiles = ({
               </div>
             </div>
 
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16">
+                    <Image
+                      src={require('./../../assets/images/feature-tile-icon-02.svg')}
+                      alt="Features tile icon 05"
+                      width={64}
+                      height={64} />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">
+                    Marketplace
+                    </h4>
+                  <p className="m-0 text-sm">
+                  La solución ideal para ayudarte a dirigir tus productos con el fin de incrementar tu nivel de ventas, optimizando los recursos existentes, eligiendo los canales de distribución adecuados…
+                    </p>
+                    <NavLink to='/Marketplace'><Button id="informacion">Más Información</Button></NavLink>
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16">
+                    <Image
+                      src={require('./../../assets/images/feature-tile-icon-01.svg')}
+                      alt="Features tile icon 05"
+                      width={64}
+                      height={64} />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">
+                    Presencia avanzada en internet
+                    </h4>
+                  <p className="m-0 text-sm">
+                  La solución para la prestación de funcionalidades y/o servicios que aseguren tu posicionamiento en Internet, aumentando el tráfico y alcance de tus clientes potenciales.
+                    </p>
+                    <NavLink to='/PresenciaAvanzadaEnInternet'><Button id="informacion">Más Información</Button></NavLink>
+                </div>
+              </div>
+            </div>
+
            
 
           </div>
